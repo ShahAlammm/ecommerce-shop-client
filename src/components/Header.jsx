@@ -16,14 +16,20 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`${isActive ? "bg-white py-4 shadow-lg" : "bg-none py-6"} fixed w-full z-10 transition-all`}>
+    <header
+      className={`${
+        isActive ? "bg-white py-4 shadow-lg" : "bg-none py-6"
+      } fixed w-full z-10 transition-all`}
+    >
       <div className="container mx-auto flex items-center justify-between h-full">
         <Link to={"/"}>
           <div>
             <img className="w-[40px]" src={Logo} alt="" />
           </div>
         </Link>
-
+        <div>
+          <h1>cat</h1>
+        </div>
         <div
           onClick={() => setIsOpen(!isOpen)}
           className="cursor-pointer flex relative max-w-[50px]"
